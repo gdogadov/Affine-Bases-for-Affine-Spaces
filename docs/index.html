@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Affine Bases for Affine Spaces">
+    <meta name="keywords" content="Affine Spaces, Flats, Grassmannian, Geometry">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Affine Bases for Affine Spaces</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered">
+                    <div class="column has-text-centered">
+                        <h1 class="title is-1 publication-title">Affine Bases for Affine Spaces</h1>
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block">
+                                <a href="https://www.cg.tu-berlin.de/people/gabriel-dogadov">Gabriel Dogadov</a></span>
+                            <span>and</span>
+                            <span class="author-block">
+                                <a href="https://www.cg.tu-berlin.de/people/marc-alexa">Marc Alexa</a>
+                            </span>
+                        </div>
+
+
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block">TU Berlin, Computer Graphics Group</span>
+                        </div>
+
+                        <div class="is-size-5 publication-authors">
+                            <strong>CVPR 2026 Findings</strong>
+                        </div>
+
+                        <div class="column has-text-centered">
+                            <div class="publication-links">
+                                <!-- PDF Link. -->
+                                <span class="link-block">
+                                    <a href="https://openaccess.thecvf.com/content/CVPR2026F/papers/Dogadov_Affine_Bases_for_Affine_Spaces_CVPRF_2026_paper.pdf"
+                                        target="_blank"
+                                        class="external-link button is-normal is-rounded is-dark inline-flex items-center gap-2">
+                                        <span class="icon" aria-hidden="true">
+                                            <i class="fa-solid fa-file-pdf"></i>
+                                        </span>
+                                        <span>Paper</span>
+                                    </a>
+                                </span>
+                                <span class="link-block">
+                                    <a href="Poster.pdf" target="_blank"
+                                        class="external-link button is-normal is-rounded is-dark inline-flex items-center gap-2">
+                                        <span class="icon" aria-hidden="true">
+                                            <i class="fa-solid fa-file-pdf"></i>
+                                        </span>
+                                        <span>Poster</span>
+                                    </a>
+                                </span>
+                                <!-- Code Link. -->
+                                <span class="link-block">
+                                    <a href="https://github.com/gdogadov/affine-bases-for-affine-spaces" target="_blank"
+                                        class="external-link button is-normal is-rounded is-dark inline-flex items-center gap-2">
+                                        <span class="icon" aria-hidden="true">
+                                            <i class="fa-brands fa-github"></i>
+                                        </span>
+                                        <span>Code</span>
+                                    </a>
+                                </span>
+                            </div>
+                            <img src="https://cybertron.cg.tu-berlin.de/php/track.php" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section">
+        <div class="container is-max-desktop">
+            <!-- Abstract. -->
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Abstract</h2>
+                    <div class="content has-text-justified">
+                        <p>
+                            Recent work suggests quadratic distance fields (QDFs) as
+                            a representation of affine subspaces of Euclidean space (often
+                            called flats), as they enable an efficient computation of
+                            weighted means: compute the weighted mean of the QDFs
+                            and then project back onto the closest QDF representing a
+                            flat. Considering this operation as an affine combination
+                            of flats, we 1) analyze the prerequisites for flats forming a
+                            basis of the space of flats and 2) provide an algorithm for
+                            projecting flats into a such a basis. Intriguingly, the projection
+                            requires nothing more than the solution of a linear
+                            system. This allows computing with flats similar to how we
+                            commonly compute with points in Euclidean spaces, with
+                            comparable cost despite the curved nature of the manifold
+                            of flats. We demonstrate the versatility of this idea by triangulating
+                            local spaces of affine lines, to be used, e.g., in
+                            image based rendering.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--/ Abstract. -->
+        </div>
+    </section>
+
+
+
+    <section class="section" id="BibTeX">
+        <div class="container is-max-desktop content">
+            <h2 class="title">BibTeX</h2>
+            <pre><code>@InProceedings{Dogadov_2026_CVPR,
+    author    = {Dogadov, Gabriel and Alexa, Marc},
+    title     = {Affine Bases for Affine Spaces},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Findings},
+    month     = {June},
+    year      = {2026},
+    pages     = {213-222}
+}</code></pre>
+        </div>
+    </section>
+
+    <section class="section" id="Acknowledgements">
+        <div class="container is-max-desktop content">
+            <h2 class="title">Acknowledgements</h2>
+            <p>This work was funded by the European Research Council (ERC) under the European Union’s Horizon 2020
+                research
+                and innovation program (Grant agreement No. 101055448, ERC Advanced Grand EMERGE).</p>
+        </div>
+    </section>
+
+</body>
+
+</html>
